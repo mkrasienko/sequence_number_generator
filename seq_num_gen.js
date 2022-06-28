@@ -1,4 +1,4 @@
-let lastSeq = 6;
+let lastSeq = 1;
 let iterations = 10;
 let seqNums = [];
 
