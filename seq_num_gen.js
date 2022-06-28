@@ -1,5 +1,11 @@
-let lastSeq = 1;
-let iterations = 10;
+const prompt = require('prompt-sync')();
+
+let lastSeq = prompt("What is the last sequence number?  ");
+lastSeq = Number(lastSeq);
+
+let iterations = prompt("How many sequence numbers do you need? ");
+iterations = Number(iterations);
+
 let seqNums = [];
 
 sequenceNumberGenerator = (lastSeq, iterations) => {
@@ -10,7 +16,7 @@ sequenceNumberGenerator = (lastSeq, iterations) => {
 
 sequenceNumberGenerator(lastSeq, iterations);
 
-// console.log(seqNums);
+console.log(seqNums);
 
 lastSeq = seqNums[seqNums.length - 1];
 
