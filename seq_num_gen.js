@@ -5,7 +5,7 @@ lastSeq = Number(lastSeq);
 
 let iterations = prompt("How many sequence numbers do you need? ");
 iterations = Number(iterations);
-
+console.log(typeof(iterations));
 let seqNums = [];
 
 sequenceNumberGenerator = (lastSeq, iterations) => {
@@ -20,4 +20,4 @@ console.log(seqNums);
 
 lastSeq = seqNums[seqNums.length - 1];
 
-console.log(lastSeq);
+// console.log(lastSeq);
